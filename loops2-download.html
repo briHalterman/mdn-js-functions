@@ -42,7 +42,11 @@
 
     // Add your code here
     for (let i = 0; i < phonebook.length; i++) {
-      console.log(phonebook[i].name);
+      let phonebookName = phonebook[i].name;
+      if (phonebookName === name) {
+        para.textContent = `${phonebook[i].name}, ${phonebook[i].number}`;
+        break
+      }
     };
     // Don't edit the code below here!
     const section = document.querySelector('section');
