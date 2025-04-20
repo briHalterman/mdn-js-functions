@@ -31,7 +31,9 @@
 
     // Add your code here
     for (const item of myArray) {
-      console.log(item)
+      const listItem = document.createElement("li");
+      listItem.textContent = item;
+      list.appendChild(listItem);
     }
     // Don't edit the code below here!
 
